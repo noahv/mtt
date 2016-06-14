@@ -259,7 +259,7 @@ class TestDef:
                 elif "ModuleCmd" == pluginInfo.plugin_object.print_name():
                     self.modcmd = pluginInfo.plugin_object
                     # initialize this module
-                    self.modcmd.setCommand(self.options)
+                    self.modcmd.setCommand(self, self.options)
                 if self.execmd is not None and self.modcmd is not None:
                     break
         if self.execmd is None:
