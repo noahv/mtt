@@ -116,8 +116,8 @@ class Autotools(BuildMTTTool):
                 if not inPlace:
                     # see if the build already exists - if
                     # it does, then we are done
-                    if os.path.exists(location) and os.path.isdir(location):
-                        testDef.logger.verbose_print("As-Is location " + location + " exists and is a directory")
+                    if os.path.exists(pfx) and os.path.isdir(pfx):
+                        testDef.logger.verbose_print("As-Is location " + pfx + " exists and is a directory")
                         # nothing further to do
                         log['status'] = 0
                         return
